@@ -1,7 +1,7 @@
 
 package primeiroprojetoemjavaaed;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class PrimeiroProjetoEmJavaAED {
 
@@ -34,6 +34,14 @@ public class PrimeiroProjetoEmJavaAED {
         System.out.println("\nExibindo cao C3:");
         c3.exibe();
         c3.late(7);
+        
+        c1.setIdade(6);
+        
+        if(c1.getPeso() > c2.getPeso() && c1.getPeso() > c3.getPeso())
+            System.out.println("O cão mais pesado é o " + c1.getNome());
+        if(c2.getPeso() > c3.getPeso())
+            System.out.println("O cão mais pesado é o " + c2.getNome());
+        else
+            System.out.println("O cão mais pesado é o " + c3.getNome());
     }
-    
 }
