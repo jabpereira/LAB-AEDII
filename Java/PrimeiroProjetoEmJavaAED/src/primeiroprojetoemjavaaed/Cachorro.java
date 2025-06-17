@@ -1,5 +1,7 @@
 package primeiroprojetoemjavaaed;
 
+import java.util.ArrayList;
+
 public class Cachorro {
     private String nome, raca;
     private int idade;

@@ -23,25 +23,23 @@ public class PrimeiroProjetoEmJavaAED {
         Cachorro c2 = new Cachorro("Ellen", "Rotweiller", 3, 30.2, 'G');
         Cachorro c3 = new Cachorro("João", "Bulldog", 8, 14.4, 'P');
         
-        System.out.println("Exibindo cão C1: ");
-        c1.exibe();
-        c1.late(5);
+        Pessoa p = new Pessoa(1, "Nico", 24);
+        p.exibe();
+        p.adota(c1);
+        p.adota(c2);
+        p.adota(c3);
+        p.doa(1);
+        p.exibe();
         
-        System.out.println("\nExibindo cao C2:");
-        c2.exibe();
-        c2.late(2);
+        Cachorro teste = p.getCachorro("Josi");
+        System.out.println("Recuperei o(a) " + teste.getNome());
+       
         
-        System.out.println("\nExibindo cao C3:");
-        c3.exibe();
-        c3.late(7);
-        
-        c1.setIdade(6);
-        
-        if(c1.getPeso() > c2.getPeso() && c1.getPeso() > c3.getPeso())
-            System.out.println("O cão mais pesado é o " + c1.getNome());
-        if(c2.getPeso() > c3.getPeso())
-            System.out.println("O cão mais pesado é o " + c2.getNome());
-        else
-            System.out.println("O cão mais pesado é o " + c3.getNome());
+//        if(c1.getPeso() > c2.getPeso() && c1.getPeso() > c3.getPeso())
+//            System.out.println("O cão mais pesado é o " + c1.getNome());
+//        if(c2.getPeso() > c3.getPeso())
+//            System.out.println("O cão mais pesado é o " + c2.getNome());
+//        else
+//            System.out.println("O cão mais pesado é o " + c3.getNome());
     }
 }
